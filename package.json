@@ -1,0 +1,20 @@
+{
+  "name": "hono-node-demo",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node src/index.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.5",
+    "hono": "^4.10.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.1",
+    "tsx": "^4.7.1",
+    "typescript": "^5.9.3"
+  },
+  "volta": {
+    "node": "25.0.0"
+  }
+}
