@@ -9,3 +9,4 @@ Hono.js Node demo
 # References
 
 * Hono: https://hono.dev/
+* [Hono CLI](https://blog.yusu.ke/hono-cli/): CLI for Humans and AI with Hono
