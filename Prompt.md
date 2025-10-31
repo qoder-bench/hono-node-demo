@@ -1,8 +1,10 @@
-# 新需求
+# New Requirement
 
-为Hono.js应用添加JWT Auth Middleware支持，算法为HS256，secret为`your-256-bit-secret`。要求如下：
+Add JWT Auth Middleware support for the Hono.js application with HS256 algorithm and secret `your-256-bit-secret`. Requirements:
 
-- 为`/api/v1/*`增加JWT验证，其他的URL放行
-- 验证失败时返回401状态码和JSON格式的错误信息
-- 增加基于username和password获取jwt的功能，生成的JWT token的payload的sub为username，过期时间为30天
-- JWT token来自于请求头的`Authorization`字段，格式为`Bearer <token>`，同时也支持x-api-key查询字段传递JWT Token
+- Add JWT verification for `/api/v1/*`, allow other URLs to pass through
+- Return 401 status code and JSON format error message when verification fails
+- Add functionality to obtain JWT based on username and password. The generated JWT token's payload sub should be username, with an expiration time of 30 days
+- JWT token comes from the `Authorization` header field in the format `Bearer <token>`, and also supports passing JWT Token through the x-api-key query parameter
+
+
